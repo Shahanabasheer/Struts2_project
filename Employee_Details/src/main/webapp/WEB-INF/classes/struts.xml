@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts  
+Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+
+		<action name="addEmp" class="action.EmpAddAction">
+			<result name="ADD EMPLOYEE">addEmployeeForm.jsp</result>
+		</action>
+		<action name="showEmp" class="action.EmpShowAction">
+			<result name="SHOW EMPLOYEE">viewEmployee.jsp</result>
+		</action>
+		<action name="editEmp" class="action.EmpEditAction">
+			<result name="EDIT EMPLOYEE">/editEmployee.jsp</result>
+		</action>
+		<action name="deleteEmp" class="action.EmpDeleteAction">
+			<result name="DELETE EMPLOYEE">/deleteEmployee.jsp</result>
+		</action>
+	</package>
+
+</struts>
